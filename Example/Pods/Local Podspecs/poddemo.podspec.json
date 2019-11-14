@@ -1,0 +1,30 @@
+{
+  "name": "poddemo",
+  "version": "0.1.0",
+  "summary": "A short description of poddemo.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yanghy22@midea.com/poddemo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yanghy22@midea.com": "yanghy22@midea.com"
+  },
+  "source": {
+    "git": "https://github.com/yanghy22@midea.com/poddemo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "poddemo/Classes/**/*",
+  "public_header_files": "poddemo/Classes/**/*.h",
+  "pod_target_xcconfig": {
+    "ENABLE_BITCODE": "NO"
+  },
+  "vendored_frameworks": [
+    "poddemo/Frameworks/TestFramework.framework",
+    "poddemo/Frameworks/QiotsSDK.framework"
+  ]
+}

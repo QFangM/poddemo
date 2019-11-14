@@ -5,9 +5,4 @@ platform :ios, '8.0'
 target 'poddemo_Example' do
   pod 'poddemo', :path => '../'
 
-  target 'poddemo_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

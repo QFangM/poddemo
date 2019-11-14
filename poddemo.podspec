@@ -31,6 +31,15 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'poddemo/Classes/**/*'
+  s.public_header_files = 'poddemo/Classes/**/*.h'
+  
+  
+  s.pod_target_xcconfig = {
+      'ENABLE_BITCODE' => 'NO',
+  }
+  
+  s.vendored_frameworks = 'poddemo/Frameworks/TestFramework.framework',
+    'poddemo/Frameworks/QiotsSDK.framework'
   
   # s.resource_bundles = {
   #   'poddemo' => ['poddemo/Assets/*.png']

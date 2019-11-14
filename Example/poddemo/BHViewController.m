@@ -7,6 +7,7 @@
 //
 
 #import "BHViewController.h"
+#import "BHTools.h"
 
 @interface BHViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    BHTools *tools = [[BHTools alloc] init];
+    [tools plus:5 with:100];
+    NSLog(@"<< %@", [tools createName]);
 }
 
 - (void)didReceiveMemoryWarning
